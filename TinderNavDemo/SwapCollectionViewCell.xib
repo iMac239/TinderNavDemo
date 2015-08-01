@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8152.3" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8124.4"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ICS-Qq-RXz" customClass="SwapCollectionViewCell" customModule="TinderNavDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pic" translatesAutoresizingMaskIntoConstraints="NO" id="wnd-MW-CbD" customClass="ImageView" customModule="TinderNavDemo" customModuleProvider="target">
+                        <rect key="frame" x="120" y="200" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="wnd-MW-CbD" secondAttribute="height" multiplier="1:1" id="UUY-09-TRq"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="wnd-MW-CbD" firstAttribute="centerY" secondItem="ICS-Qq-RXz" secondAttribute="centerY" id="5VA-lM-wIz"/>
+                <constraint firstItem="wnd-MW-CbD" firstAttribute="width" secondItem="ICS-Qq-RXz" secondAttribute="width" multiplier="0.25" id="947-LQ-KD1"/>
+                <constraint firstItem="wnd-MW-CbD" firstAttribute="centerX" secondItem="ICS-Qq-RXz" secondAttribute="centerX" id="vuS-d2-7Su"/>
+            </constraints>
+            <size key="customSize" width="346" height="483"/>
+            <connections>
+                <outlet property="imageView" destination="wnd-MW-CbD" id="V2y-FW-rJb"/>
+            </connections>
+            <point key="canvasLocation" x="360" y="226.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Pic" width="150" height="150"/>
+    </resources>
+</document>
